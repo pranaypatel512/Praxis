@@ -19,6 +19,8 @@ object BuildPlugins {
   const val DAGGER_HILT = "dagger.hilt.android.plugin"
   const val ktLint = "org.jlleitschuh.gradle.ktlint"
   const val SAFE_ARGS_KOTLIN = "androidx.navigation.safeargs.kotlin"
+  const val SONARQUBE = "org.sonarqube"
+  const val SONARQUBE_VERSION = "3.5.0.2730"
 }
 
 object Lib {

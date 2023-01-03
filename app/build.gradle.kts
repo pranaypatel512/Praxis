@@ -7,6 +7,7 @@ plugins {
   id(BuildPlugins.KOTLIN_KAPT)
   id(BuildPlugins.DAGGER_HILT)
   id(BuildPlugins.ktLint)
+  id(BuildPlugins.SONARQUBE).version(BuildPlugins.SONARQUBE_VERSION)
 }
 
 // def preDexEnabled = "true" == System.getProperty("pre-dex", "true")
@@ -155,4 +156,12 @@ dependencies {
   UnitTesting.list.forEach(::testApi)
   DevDependencies.debugList.forEach(::debugApi)
   DevDependencies.list.forEach(::api)
+}
+
+sonarqube {
+  properties {
+    property("sonar.projectKey", "pranaypatel512_Praxis")
+    property("sonar.organization", "pranaypatel512")
+    property("sonar.host.url", "https://sonarcloud.io")
+  }
 }
