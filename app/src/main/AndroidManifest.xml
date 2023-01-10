@@ -28,6 +28,7 @@
         <activity-alias
             android:name="leakcanary.internal.activity.LeakLauncherActivity"
             android:exported="true"
+            android:permission=""
             android:targetActivity="leakcanary.internal.activity.LeakActivity"
             tools:node="merge" />
     </application>

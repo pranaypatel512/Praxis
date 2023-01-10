@@ -2,7 +2,7 @@
 
 object BuildPlugins {
   private const val TOOLS_BUILD = "7.1.1"
-  private const val KT_LINT = "9.2.1"
+  private const val KT_LINT = "11.0.0"
   private const val SAFE_ARGS = "2.3.5"
 
   const val TOOLS_BUILD_GRADLE = "com.android.tools.build:gradle:${TOOLS_BUILD}"
@@ -18,7 +18,10 @@ object BuildPlugins {
   const val KOTLIN_KAPT = "kotlin-kapt"
   const val DAGGER_HILT = "dagger.hilt.android.plugin"
   const val ktLint = "org.jlleitschuh.gradle.ktlint"
+  const val ktLintVersion = "0.48.1"
   const val SAFE_ARGS_KOTLIN = "androidx.navigation.safeargs.kotlin"
+  const val SONARQUBE = "org.sonarqube"
+  const val SONARQUBE_VERSION = "3.5.0.2730"
 }
 
 object Lib {
@@ -142,7 +145,7 @@ object UnitTesting {
 }
 
 object DevDependencies {
-  private const val LEAK_CANARY_VERSION = "2.8.1"
+  private const val LEAK_CANARY_VERSION = "2.10"
   const val LEAK_CANARY = "com.squareup.leakcanary:leakcanary-android:${LEAK_CANARY_VERSION}"
   private const val TIMBER_VERSION = "4.7.1"
   const val TIMBER = "com.jakewharton.timber:timber:${TIMBER_VERSION}"
