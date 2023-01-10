@@ -34,7 +34,7 @@ android {
         resources.excludes.add("META-INF/LICENSE.txt")
         resources.excludes.add("META-INF/NOTICE.txt")
         resources.excludes.add("LICENSE.txt")
-        resources.excludes.add( "/META-INF/{AL2.0,LGPL2.1}")
+        resources.excludes.add("/META-INF/{AL2.0,LGPL2.1}")
     }
 
     compileOptions {
@@ -45,7 +45,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
 }
 
 // Required for annotation processing plugins like Dagger
@@ -55,16 +54,12 @@ kapt {
 }
 
 dependencies {
-    
-
     /*Kotlin*/
     implementation(project(":data"))
     implementation(project(":domain"))
     implementation(project(":common"))
     implementation(project(":navigator"))
     implementation(project(":commonui"))
-
-
     Lib.Androidx.list.forEach(::implementation)
     Lib.Androidx.Compose.list.forEach(::implementation)
     Lib.ThirdParty.list.forEach(::implementation)

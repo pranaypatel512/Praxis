@@ -43,8 +43,6 @@ kapt {
 }
 
 dependencies {
-    
-
     Lib.Androidx.list.forEach(::implementation)
     Lib.Androidx.Compose.list.forEach(::implementation)
     Lib.ThirdParty.list.forEach(::implementation)
